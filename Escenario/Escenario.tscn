@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dfg2jcjalofht"]
+
+[ext_resource type="Texture2D" uid="uid://kmimuw6fg35i" path="res://Imagenes/techo.png" id="2_emhj5"]
+[ext_resource type="Texture2D" uid="uid://cpew254msekn8" path="res://Imagenes/Fondo.jpg" id="2_so2qm"]
+[ext_resource type="Texture2D" uid="uid://unrx6ked3j2s" path="res://Imagenes/suelo.png" id="3_arrsx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb3um"]
+size = Vector2(1150, 79)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l6nsn"]
+size = Vector2(1147, 70)
+
+[node name="Escenario" type="StaticBody2D" unique_id=879254694]
+
+[node name="Fondo" type="Sprite2D" parent="." unique_id=37849385]
+position = Vector2(576, 282.00003)
+scale = Vector2(1.1230468, 0.9720281)
+texture = ExtResource("2_so2qm")
+
+[node name="techo" type="Sprite2D" parent="." unique_id=1595272246]
+position = Vector2(576.5, 41)
+scale = Vector2(1.4986979, 1)
+texture = ExtResource("2_emhj5")
+
+[node name="Suelo" type="Sprite2D" parent="." unique_id=403492057]
+position = Vector2(573, 609)
+scale = Vector2(1.2943503, 1)
+texture = ExtResource("3_arrsx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2048176521]
+position = Vector2(576, 39.5)
+shape = SubResource("RectangleShape2D_pb3um")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1078872328]
+position = Vector2(574.5, 618)
+shape = SubResource("RectangleShape2D_l6nsn")

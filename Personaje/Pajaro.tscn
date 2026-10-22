@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dbhai1gs4v5iw"]
+
+[ext_resource type="Texture2D" uid="uid://cari1wap22gw" path="res://Imagenes/Paloma.png" id="1_8qxgj"]
+[ext_resource type="Script" path="res://Personaje/pajaro.gd" id="2_pajaro"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b52nb"]
+radius = 16.015062
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=303074267]
+lock_rotation = true
+script = ExtResource("2_pajaro")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1806481399]
+scale = Vector2(1.5303769, 1.7062211)
+shape = SubResource("CircleShape2D_b52nb")
+
+[node name="Paloma" type="Sprite2D" parent="." unique_id=285601618]
+scale = Vector2(0.183, 0.18)
+texture = ExtResource("1_8qxgj")
+flip_h = true

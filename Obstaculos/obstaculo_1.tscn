@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://l3raro4pog3a"]
+
+[ext_resource type="Texture2D" uid="uid://1q2mluueh1ci" path="res://Imagenes/Viga2.png" id="1_ch36n"]
+[ext_resource type="Script" uid="uid://b6tkybdcdvuya" path="res://Obstaculos/obstaculo_1.gd" id="1_ywkef"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2pct"]
+size = Vector2(109, 314.5)
+
+[node name="obstaculo1" type="StaticBody2D" unique_id=556218289]
+script = ExtResource("1_ywkef")
+
+[node name="Viga2" type="Sprite2D" parent="." unique_id=2078672673]
+texture = ExtResource("1_ch36n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1604598731]
+position = Vector2(-3.5, 12.25)
+shape = SubResource("RectangleShape2D_m2pct")

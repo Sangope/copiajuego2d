@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://jiu32tbbu8x1"]
+
+[ext_resource type="PackedScene" uid="uid://dfg2jcjalofht" path="res://Escenario/Escenario.tscn" id="1_1erst"]
+[ext_resource type="PackedScene" uid="uid://l3raro4pog3a" path="res://Obstaculos/obstaculo_1.tscn" id="2_q6o6g"]
+[ext_resource type="PackedScene" uid="uid://bx8xlln2co40e" path="res://Obstaculos/obstaculo_2.tscn" id="3_biy1l"]
+[ext_resource type="PackedScene" uid="uid://dbhai1gs4v5iw" path="res://Personaje/Pajaro.tscn" id="4_hte2v"]
+[ext_resource type="Script" uid="uid://c5pg2aetbqw8n" path="res://Inicio/camera_2d.gd" id="5_biy1l"]
+
+[node name="Inicio" type="Node2D" unique_id=1752425834]
+
+[node name="Escenario" parent="." unique_id=879254694 instance=ExtResource("1_1erst")]
+position = Vector2(0, -5)
+
+[node name="Escenario2" parent="." unique_id=214768821 instance=ExtResource("1_1erst")]
+position = Vector2(1148, -5)
+
+[node name="obstaculo1" parent="Escenario2" unique_id=556218289 instance=ExtResource("2_q6o6g")]
+position = Vector2(91, 141.00002)
+scale = Vector2(0.72, 0.35999972)
+
+[node name="Obstaculo2" parent="Escenario2" unique_id=1376796883 instance=ExtResource("3_biy1l")]
+position = Vector2(101, 471.00003)
+rotation = -3.1415925
+scale = Vector2(1, 0.7199997)
+
+[node name="obstaculo1_2" parent="Escenario2" unique_id=556218290 instance=ExtResource("2_q6o6g")]
+position = Vector2(660, 172)
+scale = Vector2(0.72, 0.6)
+
+[node name="Obstaculo2_2" parent="Escenario2" unique_id=1376796884 instance=ExtResource("3_biy1l")]
+position = Vector2(670, 506)
+rotation = -3.1415925
+scale = Vector2(1, 0.48)
+
+[node name="Escenario3" parent="." unique_id=1257475829 instance=ExtResource("1_1erst")]
+position = Vector2(2296, -5)
+
+[node name="obstaculo1" parent="Escenario3" unique_id=556218291 instance=ExtResource("2_q6o6g")]
+position = Vector2(91, 194)
+scale = Vector2(0.72, 0.75)
+
+[node name="Obstaculo2" parent="Escenario3" unique_id=1376796885 instance=ExtResource("3_biy1l")]
+position = Vector2(101, 525)
+rotation = -3.1415925
+scale = Vector2(1, 0.36)
+
+[node name="obstaculo1_2" parent="Escenario3" unique_id=556218292 instance=ExtResource("2_q6o6g")]
+position = Vector2(660, 155)
+scale = Vector2(0.72, 0.48)
+
+[node name="Obstaculo2_2" parent="Escenario3" unique_id=1376796886 instance=ExtResource("3_biy1l")]
+position = Vector2(670, 488)
+rotation = -3.1415925
+scale = Vector2(1, 0.6)
+
+[node name="Escenario4" parent="." unique_id=1381678606 instance=ExtResource("1_1erst")]
+position = Vector2(3444, -5)
+
+[node name="obstaculo1" parent="Escenario4" unique_id=556218293 instance=ExtResource("2_q6o6g")]
+position = Vector2(91, 213)
+scale = Vector2(0.72, 0.88)
+
+[node name="Obstaculo2" parent="Escenario4" unique_id=1376796887 instance=ExtResource("3_biy1l")]
+position = Vector2(101, 542)
+rotation = -3.1415925
+scale = Vector2(1, 0.25)
+
+[node name="obstaculo1_2" parent="Escenario4" unique_id=556218294 instance=ExtResource("2_q6o6g")]
+position = Vector2(660, 172)
+scale = Vector2(0.72, 0.6)
+
+[node name="Obstaculo2_2" parent="Escenario4" unique_id=1376796888 instance=ExtResource("3_biy1l")]
+position = Vector2(670, 506)
+rotation = -3.1415925
+scale = Vector2(1, 0.48)
+
+[node name="Escenario5" parent="." unique_id=637556778 instance=ExtResource("1_1erst")]
+position = Vector2(4592, -5)
+
+[node name="obstaculo1" parent="Escenario5" unique_id=556218295 instance=ExtResource("2_q6o6g")]
+position = Vector2(91, 141)
+scale = Vector2(0.72, 0.36)
+
+[node name="Obstaculo2" parent="Escenario5" unique_id=1376796889 instance=ExtResource("3_biy1l")]
+position = Vector2(101, 471)
+rotation = -3.1415925
+scale = Vector2(1, 0.72)
+
+[node name="obstaculo1_2" parent="Escenario5" unique_id=556218296 instance=ExtResource("2_q6o6g")]
+position = Vector2(660, 194)
+scale = Vector2(0.72, 0.75)
+
+[node name="Obstaculo2_2" parent="Escenario5" unique_id=1376796890 instance=ExtResource("3_biy1l")]
+position = Vector2(670, 525)
+rotation = -3.1415925
+scale = Vector2(1, 0.36)
+
+[node name="Escenario6" parent="." unique_id=1071267180 instance=ExtResource("1_1erst")]
+position = Vector2(5740, -5)
+
+[node name="obstaculo1" parent="Escenario6" unique_id=556218297 instance=ExtResource("2_q6o6g")]
+position = Vector2(91, 155)
+scale = Vector2(0.72, 0.48)
+
+[node name="Obstaculo2" parent="Escenario6" unique_id=1376796891 instance=ExtResource("3_biy1l")]
+position = Vector2(101, 488)
+rotation = -3.1415925
+scale = Vector2(1, 0.6)
+
+[node name="obstaculo1_2" parent="Escenario6" unique_id=556218298 instance=ExtResource("2_q6o6g")]
+position = Vector2(660, 213)
+scale = Vector2(0.72, 0.88)
+
+[node name="Obstaculo2_2" parent="Escenario6" unique_id=1376796892 instance=ExtResource("3_biy1l")]
+position = Vector2(670, 542)
+rotation = -3.1415925
+scale = Vector2(1, 0.25)
+
+[node name="Escenario7" parent="." unique_id=1095537746 instance=ExtResource("1_1erst")]
+position = Vector2(6888, -5)
+
+[node name="obstaculo1" parent="Escenario7" unique_id=556218299 instance=ExtResource("2_q6o6g")]
+position = Vector2(91, 172)
+scale = Vector2(0.72, 0.6)
+
+[node name="Obstaculo2" parent="Escenario7" unique_id=1376796893 instance=ExtResource("3_biy1l")]
+position = Vector2(101, 506)
+rotation = -3.1415925
+scale = Vector2(1, 0.48)
+
+[node name="obstaculo1_2" parent="Escenario7" unique_id=556218300 instance=ExtResource("2_q6o6g")]
+position = Vector2(660, 141)
+scale = Vector2(0.72, 0.36)
+
+[node name="Obstaculo2_2" parent="Escenario7" unique_id=1376796894 instance=ExtResource("3_biy1l")]
+position = Vector2(670, 471)
+rotation = -3.1415925
+scale = Vector2(1, 0.72)
+
+[node name="Escenario8" parent="." unique_id=806297699 instance=ExtResource("1_1erst")]
+position = Vector2(8036, -5)
+
+[node name="obstaculo1" parent="Escenario8" unique_id=556218301 instance=ExtResource("2_q6o6g")]
+position = Vector2(91, 194)
+scale = Vector2(0.72, 0.75)
+
+[node name="Obstaculo2" parent="Escenario8" unique_id=1376796895 instance=ExtResource("3_biy1l")]
+position = Vector2(101, 525)
+rotation = -3.1415925
+scale = Vector2(1, 0.36)
+
+[node name="obstaculo1_2" parent="Escenario8" unique_id=556218302 instance=ExtResource("2_q6o6g")]
+position = Vector2(600, 172)
+scale = Vector2(0.72, 0.6)
+
+[node name="Obstaculo2_2" parent="Escenario8" unique_id=1376796896 instance=ExtResource("3_biy1l")]
+position = Vector2(610, 506)
+rotation = -3.1415925
+scale = Vector2(1, 0.48)
+
+[node name="RigidBody2D" parent="." unique_id=303074267 instance=ExtResource("4_hte2v")]
+position = Vector2(298, 290)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1851414000 node_paths=PackedStringArray("objeto_a_seguir")]
+position = Vector2(298, 320)
+script = ExtResource("5_biy1l")
+objeto_a_seguir = NodePath("../RigidBody2D")
+
+
