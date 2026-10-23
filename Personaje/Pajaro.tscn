@@ -7,6 +7,8 @@
 radius = 16.015062
 
 [node name="RigidBody2D" type="RigidBody2D" unique_id=303074267]
+contact_monitor = true
+max_contacts_reported = 4
 lock_rotation = true
 script = ExtResource("2_pajaro")
 
